@@ -61,7 +61,7 @@ async function gesture(page, session, rail) {
         await page.goto(`${target}/?lang=${lang}`);
         await ready(page);
         const introMs = await page.evaluate(() => ditesmoiIntro.finishedAt - ditesmoiIntro.started);
-        assert.ok(introMs <= 1150, `Mobile intro too long: ${introMs}`);
+        assert.ok(introMs >= 2200 && introMs <= 2800, `Mobile intro timing: ${introMs}`);
         assert.equal(await page.evaluate(() => !!ditesmoiMotion.lenis || !!ditesmoiMotion.horizontal), false);
         assert.equal(await page.locator('.motion-cursor').evaluate(e => getComputedStyle(e).display), 'none');
         assert.ok(Math.abs(await page.locator('.hero').evaluate(e => e.offsetHeight) - descriptor.viewport.height) <= 1);

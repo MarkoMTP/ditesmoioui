@@ -217,6 +217,12 @@
       document.querySelectorAll('.image-slot:not(.hero-image):not(.press-image)').forEach(frame => {
         const img = frame.querySelector('img');
         if (!img) return;
+        if (mobile) {
+          // A single compositor animation avoids nested full-image scroll layers.
+          const animation = gsap.fromTo(img, { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: .7, paused: true });
+          revealOnce(animation, frame);
+          return;
+        }
         if (mobile && !frame.getClientRects().length) return;
         if (mobile && frame.closest('.gallery-canvas, .portfolio-grid')) {
           const box = frame.getBoundingClientRect();
@@ -311,7 +317,10 @@
       };
       window.addEventListener('ditesmoi:intro-complete', finishIntro);
       cleanup.push(() => window.removeEventListener('ditesmoi:intro-complete', finishIntro));
-      if (boot?.first && !boot.done && performance.now() - boot.started < (mobile ? 850 : 1550)) {
+      if (mobile && boot?.first && !boot.done) {
+        // The independent SVG intro owns its timing, including slow font loads.
+        heroAnimation?.pause(0);
+      } else if (boot?.first && !boot.done && performance.now() - boot.started < 1550) {
         const dialog = document.getElementById('motion-intro');
         if (!dialog.open) dialog.showModal();
         const path = dialog.querySelector('.oui-stroke');
@@ -329,7 +338,7 @@
         const remaining = Math.max(.2, ((mobile ? 1050 : 1850) - (performance.now() - boot.started)) / 1000);
         introTimeline.timeScale(Math.max(1, introTimeline.duration() / remaining));
       } else {
-        boot?.finish();
+        if (!mobile || !boot?.first || boot.done) boot?.finish();
         if (languageRebuild && hero.getBoundingClientRect().bottom > 0 && hero.getBoundingClientRect().top < innerHeight) heroAnimation?.play(0);
         else if (boot?.first) heroAnimation?.progress(1);
         else heroAnimation?.play(0);

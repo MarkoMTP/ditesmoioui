@@ -22,11 +22,39 @@
   };
   if (!boot.first) { boot.done = true; return; }
   root.classList.add('intro-pending');
-  setTimeout(boot.finish, mobile ? 1100 : 1900);
+  setTimeout(boot.finish, mobile ? 4000 : 1900);
   document.addEventListener('click', e => { if (e.target.closest('#motion-intro')) boot.finish(); }, true);
   document.addEventListener('cancel', e => { if (e.target.id === 'motion-intro') { e.preventDefault(); boot.finish(); } }, true);
   document.addEventListener('DOMContentLoaded', () => {
-    if (!boot.done) document.getElementById('motion-intro').showModal();
+    if (boot.done) return;
+    const dialog = document.getElementById('motion-intro');
+    dialog.showModal();
+    if (!mobile) return;
+    // Start before fonts, translations or the full motion controller are ready.
+    boot.nativeMobile = true;
+    const animations = [];
+    const animate = (node, frames, options) => {
+      const animation = node.animate(frames, { fill: 'both', ...options });
+      animations.push(animation);
+      return animation;
+    };
+    const path = dialog.querySelector('.oui-stroke');
+    const length = path.getTotalLength();
+    path.style.strokeDasharray = length;
+    animate(path, { strokeDashoffset: [length, 0] }, { duration: 1200, easing: 'ease-in-out' });
+    const dot = dialog.querySelector('.oui-dot');
+    dot.style.strokeDasharray = 'none';
+    dot.style.strokeDashoffset = '0';
+    animate(dot, { opacity: [0, 1] }, { delay: 1000, duration: 200 });
+    animate(dialog, { opacity: [1, 0] }, { delay: 1500, duration: 250 });
+    const closeTimer = setTimeout(() => { if (dialog.open) dialog.close(); }, 1750);
+    animate(document.querySelector('.shutter-left'), { transform: ['translateX(0)', 'translateX(-101%)'] }, { delay: 1600, duration: 650, easing: 'cubic-bezier(.16,1,.3,1)' });
+    const end = animate(document.querySelector('.shutter-right'), { transform: ['translateX(0)', 'translateX(101%)'] }, { delay: 1600, duration: 650, easing: 'cubic-bezier(.16,1,.3,1)' });
+    end.finished.then(boot.finish).catch(() => {});
+    window.addEventListener('ditesmoi:intro-complete', () => {
+      clearTimeout(closeTimer);
+      animations.forEach(animation => animation.cancel());
+    }, { once: true });
   }, { once: true });
 })();</script>
 <meta charset="utf-8"/>

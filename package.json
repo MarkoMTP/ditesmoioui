@@ -10,6 +10,7 @@
     "check:performance": "node scripts/performance.js",
     "sync:motion": "node scripts/sync-motion-vendor.js",
     "check:motion": "node scripts/check-motion.js",
+    "check:video": "node scripts/check-video.js",
     "check:mobile": "node scripts/check-mobile.js",
     "check:performance:mobile": "node scripts/performance-mobile.js",
     "capture:mobile": "node scripts/capture-mobile-full.js",

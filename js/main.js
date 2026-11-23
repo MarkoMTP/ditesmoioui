@@ -104,10 +104,16 @@ window.DMOI18n.ready.then(() => {
   const heroVideoToggle = document.querySelector('.hero-video-toggle');
   if (heroVideo && heroVideoToggle) {
     const heroFigure = heroVideo.closest('.hero-image');
-    let videoPausedByUser = reducedMotion.matches;
+    let videoPausedByUser = false;
+    let videoStartedByUser = false;
     let videoInView = false;
     let posterReady = false;
+    let playPending = false;
+    let interruptedRetries = 0;
+    let retryTimer;
+    heroVideo.defaultMuted = true;
     heroVideo.muted = true;
+    heroVideo.playsInline = true;
     heroVideoToggle.hidden = false;
     function updateVideoControl() {
       heroVideoToggle.classList.toggle('is-paused', heroVideo.paused);
@@ -115,8 +121,13 @@ window.DMOI18n.ready.then(() => {
       heroVideoToggle.dataset.i18nAriaLabel = heroVideo.paused ? 'a11y.playVideo' : 'a11y.pauseVideo';
       heroVideoToggle.setAttribute('aria-label', t(heroVideoToggle.dataset.i18nAriaLabel));
     }
-    function syncVideoPlayback() {
-      if (!posterReady || videoPausedByUser || !videoInView || document.hidden) {
+    function shouldPlayVideo() {
+      return !videoPausedByUser && (!reducedMotion.matches || videoStartedByUser)
+        && videoInView && !document.hidden;
+    }
+    function syncVideoPlayback(fromGesture = false) {
+      clearTimeout(retryTimer);
+      if ((!posterReady && !fromGesture) || !shouldPlayVideo()) {
         heroVideo.pause();
         return;
       }
@@ -125,28 +136,51 @@ window.DMOI18n.ready.then(() => {
           ? heroVideo.dataset.mobileSrc : heroVideo.dataset.src;
         heroVideo.load();
       }
-      heroVideo.play().catch(() => { videoPausedByUser = true; updateVideoControl(); });
+      if (heroVideo.error && fromGesture) heroVideo.load();
+      if ((!heroVideo.paused || playPending) && !fromGesture) return;
+      playPending = true;
+      heroVideo.play().then(() => {
+        playPending = false;
+        interruptedRetries = 0;
+        if (!shouldPlayVideo()) heroVideo.pause();
+      }).catch(error => {
+        playPending = false;
+        // A browser interruption is not a request from the visitor to pause.
+        // Policy blocks wait for a trusted tap; aborted loads get one fresh attempt.
+        if (error.name === 'AbortError' && shouldPlayVideo() && interruptedRetries < 1) {
+          interruptedRetries++;
+          retryTimer = setTimeout(() => syncVideoPlayback(), 150);
+        }
+        updateVideoControl();
+      });
     }
     heroVideoToggle.addEventListener('click', () => {
       videoPausedByUser = !heroVideo.paused;
-      syncVideoPlayback();
+      videoStartedByUser = !videoPausedByUser;
+      syncVideoPlayback(true);
     });
     heroVideo.addEventListener('play', updateVideoControl);
     heroVideo.addEventListener('pause', updateVideoControl);
     heroVideo.addEventListener('playing', () => heroFigure.classList.add('has-video-frame'));
     heroVideo.addEventListener('error', () => {
       heroFigure.classList.remove('has-video-frame');
-      heroVideoToggle.hidden = true;
+      updateVideoControl();
     });
     const videoObserver = new IntersectionObserver(entries => {
       videoInView = entries[0].isIntersecting;
       syncVideoPlayback();
     }, { threshold: .1 });
     videoObserver.observe(heroVideo);
-    document.addEventListener('visibilitychange', syncVideoPlayback);
-    window.addEventListener('ditesmoi:intro-complete', syncVideoPlayback);
+    document.addEventListener('visibilitychange', () => syncVideoPlayback());
+    window.addEventListener('pageshow', () => syncVideoPlayback());
+    window.addEventListener('ditesmoi:intro-complete', () => syncVideoPlayback());
+    heroVideo.addEventListener('canplay', () => syncVideoPlayback());
+    document.addEventListener('pointerdown', event => {
+      if (event.target.closest('.hero-video-toggle') || reducedMotion.matches) return;
+      if (heroVideo.paused && shouldPlayVideo()) syncVideoPlayback(true);
+    }, { passive: true });
     reducedMotion.addEventListener('change', event => {
-      if (event.matches) videoPausedByUser = true;
+      if (event.matches) videoStartedByUser = false;
       syncVideoPlayback();
     });
     // Let the poster render before downloading motion media.

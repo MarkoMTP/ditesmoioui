@@ -103,3 +103,5 @@ html.mobile-sheet-open, html.mobile-sheet-open body { overflow: hidden; overscro
   .mobile-ux .button:active, .mobile-ux .text-link:active, .mobile-ux .gallery-image:active, .mobile-ux .portfolio-card:active, .mobile-ux .destination-row:active, .mobile-ux .estimate-option:active { transform: none; }
   .mobile-ux button:active, .mobile-bottom-bar > a:active { transform: none !important; }
 }
+/* Avoid repainting a full-screen SVG turbulence layer during native scrolling. */
+.mobile-ux body::before { display: none; }
