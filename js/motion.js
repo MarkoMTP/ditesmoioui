@@ -88,7 +88,8 @@
       }
 
       if (!mobile && desktop && fine && navigator.maxTouchPoints === 0 && window.Lenis) {
-        const lenis = new Lenis({ autoRaf: false, duration: 1.15, smoothWheel: true, syncTouch: false, anchors: false,
+        // Native wheel/trackpad response; Lenis handles explicit anchor navigation only.
+        const lenis = new Lenis({ autoRaf: false, duration: .65, smoothWheel: false, syncTouch: false, anchors: false,
           prevent: node => Boolean(node.closest('dialog, [data-lenis-prevent]')) });
         const tick = time => lenis.raf(time * 1000);
         lenis.on('scroll', ScrollTrigger.update);
@@ -125,6 +126,19 @@
       const current = progress.querySelector('.destination-current');
       const status = progress.querySelector('.destination-status');
       const tints = [...section.querySelectorAll('.destination-tints > span')];
+      // Load/decode upcoming panels before horizontal movement brings them onscreen.
+      if (!mobile) {
+        const preload = new IntersectionObserver(entries => {
+          if (!entries.some(entry => entry.isIntersecting)) return;
+          rows.forEach(row => row.querySelectorAll('img').forEach(img => {
+            img.loading = 'eager';
+            img.decode().catch(() => {});
+          }));
+          preload.disconnect();
+        }, { rootMargin: '150% 0px' });
+        preload.observe(section);
+        cleanup.push(() => preload.disconnect());
+      }
       if (!mobile && desktop && fine) {
         section.classList.add('motion-horizontal');
         progress.hidden = false;
@@ -139,7 +153,7 @@
         const fill = gsap.quickSetter(progress.querySelector('.destination-progress-fill'), 'scaleX');
         pan = gsap.timeline({ scrollTrigger: {
           id: 'destinations-pan', trigger: section, start: 'top top', end: () => `+=${innerHeight * (rows.length - 1) * .95}`,
-          pin: true, pinSpacing: true, scrub: 1, anticipatePin: 1, invalidateOnRefresh: true, refreshPriority: 1,
+          pin: true, pinSpacing: true, scrub: true, anticipatePin: 1, invalidateOnRefresh: true, refreshPriority: 1,
           onUpdate(self) {
             fill(1 / rows.length + self.progress * (1 - 1 / rows.length));
             horizontalReveals.forEach(reveal => {
@@ -187,23 +201,23 @@
       }
 
       const revealAnimations = new Map();
-      const revealObserver = mobile ? new IntersectionObserver(entries => {
+      const revealObserver = new IntersectionObserver(entries => {
         entries.forEach(entry => {
           if (!entry.isIntersecting) return;
           revealAnimations.get(entry.target)?.play();
           revealAnimations.delete(entry.target); revealObserver.unobserve(entry.target);
         });
-      }, { rootMargin: '0px 0px 8% 0px' }) : null;
+      }, { rootMargin: '0px 0px 8% 0px' });
       if (revealObserver) cleanup.push(() => { revealObserver.disconnect(); revealAnimations.clear(); });
       function revealOnce(animation, element) {
+        if (pan && element.closest('.destination-row')) return;
         if (!revealObserver) return;
         revealAnimations.set(element, animation); revealObserver.observe(element);
       }
       function triggerFor(element) {
         if (pan && element.closest('.destination-row')) return null;
         if (element.getBoundingClientRect().bottom <= 0) return false;
-        if (mobile) return null;
-        return { trigger: element, start: 'top 92%', once: true };
+        return null;
       }
       function registerHorizontal(animation, element) {
         const row = pan && element.closest('.destination-row');
@@ -217,35 +231,16 @@
       document.querySelectorAll('.image-slot:not(.hero-image):not(.press-image)').forEach(frame => {
         const img = frame.querySelector('img');
         if (!img) return;
-        if (mobile) {
+        if (mobile || !pan || !frame.closest('.destination-row')) {
           // A single compositor animation avoids nested full-image scroll layers.
           const animation = gsap.fromTo(img, { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: .7, paused: true });
           revealOnce(animation, frame);
           return;
         }
-        if (mobile && !frame.getClientRects().length) return;
-        if (mobile && frame.closest('.gallery-canvas, .portfolio-grid')) {
-          const box = frame.getBoundingClientRect();
-          if (box.left >= innerWidth || box.right <= 0) return;
-        }
-        const wipe = document.createElement('div'); wipe.className = 'image-wipe';
-        const inner = document.createElement('div'); inner.className = 'image-wipe-inner';
-        wipe.append(inner); frame.insertBefore(wipe, img);
-        let imageParent = inner;
-        if (frame.classList.contains('arch-image')) {
-          const parallax = document.createElement('div'); parallax.className = 'image-parallax'; inner.append(parallax); imageParent = parallax;
-          gsap.fromTo(parallax, { yPercent: mobile ? -4 : -8 }, { yPercent: mobile ? 4 : 8, ease: 'none', scrollTrigger: { trigger: frame, start: 'top bottom', end: 'bottom top', scrub: mobile ? .35 : .8 } });
-        }
-        imageParent.append(img);
-        images.push({ frame, img, wipe });
-        const trigger = triggerFor(frame);
-        const tl = gsap.timeline(trigger ? { scrollTrigger: trigger } : { paused: true });
-        tl.fromTo(wipe, { yPercent: 100 }, { yPercent: 0, duration: mobile ? .7 : 1.2 }, 0)
-          .fromTo(inner, { yPercent: -100 }, { yPercent: 0, duration: mobile ? .7 : 1.2 }, 0)
-          .fromTo(img, { scale: 1.08 }, { scale: 1, duration: mobile ? .7 : 1.4 }, 0);
-        if (trigger === false) tl.progress(1);
-        else if (mobile) revealOnce(tl, frame);
-        registerHorizontal(tl, frame);
+        // Pinned panels already move horizontally; avoid additional image surfaces.
+        const destinationReveal = gsap.fromTo(img, { opacity: 0 }, { opacity: 1, duration: .7, paused: true });
+        registerHorizontal(destinationReveal, frame);
+
       });
 
       function splitHeading(heading) {
@@ -260,7 +255,7 @@
             const accents = heading.querySelectorAll('em');
             if (accents.length) tl.fromTo(accents, { opacity: 0 }, { opacity: 1, duration: mobile ? .4 : .8, ease: 'expo.out' }, mobile ? .1 : .2);
             if (!isHero && trigger === false) tl.progress(1);
-            else if (mobile && !isHero) revealOnce(tl, heading);
+            else if (!isHero) revealOnce(tl, heading);
             if (isHero) heroAnimation = tl;
             return tl;
           }
@@ -274,13 +269,13 @@
         const trigger = triggerFor(element);
         const animation = gsap.fromTo(element, { y: 22, opacity: 0 }, { y: 0, opacity: 1, duration: mobile ? .6 : 1.1, ...(trigger ? { scrollTrigger: trigger } : { paused: true }) });
         if (trigger === false) animation.progress(1);
-        else if (mobile) revealOnce(animation, element);
+        else revealOnce(animation, element);
       });
       rows.forEach(row => {
         const trigger = triggerFor(row);
         const animation = gsap.fromTo(row.querySelector('.destination-copy'), { y: 22, opacity: 0 }, { y: 0, opacity: 1, duration: mobile ? .6 : 1.1, ...(trigger ? { scrollTrigger: trigger } : { paused: true }) });
         if (trigger === false) animation.progress(1);
-        else if (mobile) revealOnce(animation, row.querySelector('.destination-copy'));
+        else revealOnce(animation, row.querySelector('.destination-copy'));
         registerHorizontal(animation, row);
       });
       if (pan) ScrollTrigger.create({ trigger: section, start: 'top 90%', once: true, onEnter: () => {
@@ -306,8 +301,8 @@
         if (element.getBoundingClientRect().bottom <= 0) { element.textContent = String(final); return; }
         const number = { value: Number(element.dataset.countFrom || 0) };
         const count = gsap.to(number, { value: final, duration: 1.2, ease: 'expo.out', snap: { value: 1 }, onUpdate: () => { element.textContent = String(number.value); },
-          ...(mobile ? { paused: true } : { scrollTrigger: { trigger: element.closest('.stats-band'), start: 'top 85%', once: true } }) });
-        if (mobile) revealOnce(count, element);
+          paused: true });
+        revealOnce(count, element);
         cleanup.push(() => { element.textContent = String(final); });
       });
 

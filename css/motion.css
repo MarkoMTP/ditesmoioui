@@ -35,6 +35,8 @@ html.intro-pending .hero-shutters { display: block; }
 .motion-horizontal .destination-intro p { font-size: 14px; }
 .motion-horizontal .destination-viewport { overflow: clip; flex: 1 1 auto; min-height: 0; }
 .motion-horizontal .destination-rows { display: flex; gap: 0; width: calc(var(--destination-count, 4) * 100%); height: 100%; }
+.motion-horizontal .destination-rows { will-change: transform; }
+.motion-horizontal .destination-tints > span { will-change: opacity; }
 .motion-horizontal .destination-row { flex: 0 0 calc(100% / var(--destination-count, 4)); width: calc(100% / var(--destination-count, 4)); min-width: 0; grid-template-columns: 1fr 1fr; gap: clamp(40px, 6vw, 90px); padding: 18px 28px 18px 12px; }
 .motion-horizontal .destination-row > .image-slot,
 .motion-horizontal .destination-row:nth-child(even) > .image-slot { grid-column: 1; grid-row: 1; justify-self: center; width: min(100%, 340px); height: min(100%, 450px); min-height: 0; max-height: 100%; aspect-ratio: .82; }

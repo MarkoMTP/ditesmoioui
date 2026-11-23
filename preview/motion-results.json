@@ -1,6 +1,6 @@
 {
   "desktop": {
-    "introMs": 1803,
+    "introMs": 1839,
     "sessionOnly": true,
     "lenis": true,
     "horizontalPanels": [
@@ -26,7 +26,7 @@
           "0",
           "0"
         ],
-        "x": -1179.9988
+        "x": -1180
       },
       {
         "index": "2",
@@ -38,7 +38,7 @@
           "1",
           "0"
         ],
-        "x": -2360.0012
+        "x": -2360
       },
       {
         "index": "3",
@@ -73,7 +73,7 @@
     "accessibilityViolations": 0
   },
   "skip": {
-    "endedMs": 36.30000001192093,
+    "endedMs": 33.69999998807907,
     "visible": false
   },
   "mobile": {

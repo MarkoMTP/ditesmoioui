@@ -1,0 +1,28 @@
+{
+  "smoothWheel": false,
+  "triggers": 1,
+  "parallaxLayers": 0,
+  "cpuSlowdown": 4,
+  "samples": [
+    {
+      "region": "page",
+      "stalls": [],
+      "p95": 16.700000000000728,
+      "max": 16.800000000000182,
+      "over33": 0
+    },
+    {
+      "region": "destinations",
+      "stalls": [
+        {
+          "ms": 50.100000000000364,
+          "progress": 0.516140350877193,
+          "y": 6659
+        }
+      ],
+      "p95": 16.700000000000728,
+      "max": 50.100000000000364,
+      "over33": 1
+    }
+  ]
+}

@@ -220,3 +220,9 @@ Playback now keeps browser interruptions separate from an explicit visitor pause
 `npm run check:video` passed in Pixel 7 Chromium and iPhone 14 WebKit emulation: real decoded autoplay, MP4 range responses, offscreen pause/resume, persistent manual pause, reduced-motion handling and recovery from an injected interrupted playback request.
 
 # ditesmoioui
+
+### Desktop scroll correction
+
+Desktop wheel/trackpad scrolling now uses native browser movement (`smoothWheel: false`); Lenis remains for explicit anchor navigation. The destination pin follows scroll directly (`scrub: true`) rather than adding a second easing delay. One shared IntersectionObserver starts one-time reveals, leaving only the destination pin as a desktop ScrollTrigger. Continuous image parallax and nested image-wipe surfaces were removed; simple opacity/translate reveals remain. Destination images preload/decode when the section approaches. A static repeating SVG stipple replaces the filtered turbulence texture on desktop; mobile still omits the overlay.
+
+`npm run check:motion` passed after these changes, including all four panels, keyboard controls, count-up, lightbox, cursor, magnetic CTA, reduced-motion cleanup and accessibility checks. `node scripts/check-desktop-scroll.js` records an isolated 4× CPU rAF cadence sample in `preview/desktop-scroll-results.json`; it is a browser timing proxy, not a physical-device GPU guarantee.
