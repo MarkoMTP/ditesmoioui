@@ -1,0 +1,101 @@
+{
+  "widths": [
+    {
+      "width": 390,
+      "overflow": false,
+      "images": 22,
+      "errors": []
+    },
+    {
+      "width": 768,
+      "overflow": false,
+      "images": 22,
+      "errors": []
+    },
+    {
+      "width": 1024,
+      "overflow": false,
+      "images": 24,
+      "errors": []
+    },
+    {
+      "width": 1440,
+      "overflow": false,
+      "images": 24,
+      "errors": []
+    }
+  ],
+  "interactions": [
+    {
+      "width": 390,
+      "stickyHeader": true,
+      "menu": "passed",
+      "dotControls": true,
+      "keyboard": true,
+      "swipe": true,
+      "placeholderDialog": true
+    },
+    {
+      "width": 768,
+      "stickyHeader": true,
+      "menu": "passed",
+      "dotControls": true,
+      "keyboard": true,
+      "swipe": true,
+      "placeholderDialog": true
+    },
+    {
+      "width": 1024,
+      "stickyHeader": true,
+      "menu": "passed",
+      "dotControls": true,
+      "keyboard": true,
+      "swipe": true,
+      "placeholderDialog": true
+    },
+    {
+      "width": 1440,
+      "stickyHeader": true,
+      "menu": "desktop navigation",
+      "dotControls": true,
+      "keyboard": true,
+      "swipe": true,
+      "placeholderDialog": true
+    }
+  ],
+  "accessibility": [
+    {
+      "width": 390,
+      "violations": []
+    },
+    {
+      "width": 768,
+      "violations": []
+    },
+    {
+      "width": 1024,
+      "violations": []
+    },
+    {
+      "width": 1440,
+      "violations": []
+    }
+  ],
+  "heroVideo": {
+    "autoplay": true,
+    "muted": true,
+    "loop": true,
+    "reducedMotion": true,
+    "manualPlayPause": true,
+    "mobileAutoplay": true,
+    "fullViewport": true
+  },
+  "automaticTestimonials": {
+    "interval": "7000ms",
+    "hoverPause": true,
+    "focusPause": true,
+    "pauseResume": true,
+    "reducedMotion": true
+  },
+  "noJavaScriptContent": "passed"
+}

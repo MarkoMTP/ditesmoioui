@@ -1,0 +1,433 @@
+{
+  "meta": {
+    "title": "Dites Moi Oui | Luxury Wedding Planner in Provence & the South of France",
+    "description": "Two sisters planning luxury weddings and celebrations in Provence, the South of France, Corsica, Marrakech and Apulia since 2005."
+  },
+  "nav": {
+    "home": "Home",
+    "services": "Our Services",
+    "destinations": "Destinations",
+    "sisters": "The Sisters",
+    "portfolio": "Portfolio",
+    "journal": "Journal",
+    "contact": "Contact",
+    "client": "Client Access"
+  },
+  "hero": {
+    "h1": "Luxury Wedding Planner in Provence & the South of France",
+    "sub": "Two sisters, one shared passion since 2005, and a simple promise: a wedding that feels entirely <em>yours</em>.",
+    "intro": "From a candlelit dinner in a Provençal bastide to a barefoot celebration in Corsica, an evening in Marrakech or a weekend in Apulia, we design and produce celebrations with taste, precision and heart.",
+    "primary": "Begin Your Story",
+    "secondary": "Discover Our Services"
+  },
+  "sisters": {
+    "eyebrow": "The Sisters",
+    "h2": "Meet Géraldine & <em>Amandine</em>",
+    "body1": "Géraldine founded Dites Moi Oui in 2005, and her sister Amandine joined her as partner in 2012. From our offices in Marseille, we plan weddings and private celebrations across Provence, the Côte d'Azur and far beyond, always together and always personally.",
+    "body2": "We take on a limited number of celebrations each year, so that every couple has our full attention. Over the months of planning, we become more than your planners: we become your confidantes, from the very first call to the last dance.",
+    "signature": "Géraldine & Amandine",
+    "link": "Our Story",
+    "captions": "Géraldine — Founder · Amandine — Partner"
+  },
+  "stats": {
+    "items": [
+      {
+        "value": "2005",
+        "label": "Founded in Marseille"
+      },
+      {
+        "value": "2",
+        "label": "Sisters, one team"
+      },
+      {
+        "value": "4",
+        "label": "Signature destinations"
+      }
+    ]
+  },
+  "services": {
+    "eyebrow": "From A to Z",
+    "h2": "Complete Wedding <em>Planning</em> & Design",
+    "body": "Venue search, design, suppliers, guest logistics, timeline: we take care of every step, so you can enjoy the months before your wedding as much as the day itself.",
+    "link": "View Our Services",
+    "list": [
+      "Full Wedding Planning: from the first idea to the last guest's departure.",
+      "Destination Weddings: France, Corsica, Morocco and Italy, planned with local knowledge and a trusted network.",
+      "Venue Sourcing: the right place for your story, from our network of exceptional venues.",
+      "Private Celebrations: anniversaries, birthdays and parties, with the same care as a wedding."
+    ]
+  },
+  "production": {
+    "eyebrow": "On the Day",
+    "h2": "Production, <em>perfected</em>",
+    "body": "Led by Géraldine, our production team turns months of ideas into one seamless day: set-up, suppliers, timings and all the small details your guests will never notice, because nothing goes wrong.",
+    "link": "How We Work"
+  },
+  "gallery": {
+    "h3": "Chaque évènement débute avec une histoire.",
+    "h2": "Every celebration begins with a <em>story</em>."
+  },
+  "destinations": {
+    "h2": "Where we say <em>oui</em>",
+    "intro": "Provençal bastides, sea-view villas and secluded Corsican settings: each venue is chosen for the couple, never the other way round.",
+    "link": "Discover",
+    "items": [
+      {
+        "title": "Provence",
+        "body": "Lavender fields, stone bastides and long tables under the plane trees.",
+        "discover": "Discover Provence"
+      },
+      {
+        "title": "French Riviera",
+        "body": "Celebrations along the Mediterranean coast.",
+        "discover": "Discover French Riviera"
+      },
+      {
+        "title": "Corsica",
+        "body": "Wild coastline, turquoise coves and barefoot evenings by the sea.",
+        "discover": "Discover Corsica"
+      },
+      {
+        "title": "And beyond",
+        "body": "Italy, Marrakech…",
+        "discover": "Discover more destinations"
+      }
+    ]
+  },
+  "estimate": {
+    "h2": "What could your wedding in <em>France</em> look like?",
+    "body": "Answer five quick questions and receive a first estimate for your celebration, reviewed personally by Géraldine & Amandine.",
+    "button": "Start"
+  },
+  "testimonials": {
+    "h2": "Kind <em>words</em>",
+    "intro": "Trusted by couples from New York, London, Hong Kong, Sydney, Lagos and beyond.",
+    "link": "Read all testimonials",
+    "items": [
+      {
+        "quote": "\"A huge thank you to the two sisters for a masterfully organised wedding!\"",
+        "name": "Victoria & Antoine — Paris / Australia"
+      },
+      {
+        "quote": "\"Thank you, girls. It was a fantastic weekend for our guests, and for us too!\"",
+        "name": "Michelle & Chris — New York"
+      },
+      {
+        "quote": "\"You did an outstanding job, and all our guests are still in awe.\"",
+        "name": "Nell & Chris — Sydney"
+      },
+      {
+        "quote": "\"We loved how you listened, your kindness and your professionalism.\"",
+        "name": "Brad & Manuel — San Francisco"
+      },
+      {
+        "quote": "\"You truly are the best.\"",
+        "name": "Ginika & Tolu — Lagos"
+      }
+    ]
+  },
+  "portfolio": {
+    "h2": "OUR SIGNATURE WORK",
+    "button": "Explore Our Portfolio",
+    "items": [
+      {
+        "title": "A Summer Wedding at Château d'Estoublon",
+        "couple": "Marina & Mark — Washington, USA"
+      },
+      {
+        "title": "Love & Dance at Domaine de la Coquillade",
+        "couple": "Joanne & Sylvain — Paris"
+      },
+      {
+        "title": "A Festive Wedding in La Cadière-d'Azur",
+        "couple": "Jessica & Michael — New York"
+      }
+    ]
+  },
+  "closing": {
+    "h2": "Tell us your story. We'll take care of the <em>oui</em>.",
+    "button": "Book a Free Consultation"
+  },
+  "sticky": {
+    "label": "Enquire"
+  },
+  "footer": {
+    "tagline": "Luxury weddings and celebrations in Provence, the South of France and beyond.",
+    "links": {
+      "home": "Home",
+      "sisters": "The Sisters",
+      "destinations": "Destinations",
+      "services": "Wedding Services",
+      "journal": "Journal",
+      "portfolio": "Portfolio",
+      "contact": "Contact"
+    },
+    "button": "Make an Enquiry",
+    "phone": "+33 (0)4 91 06 64 46",
+    "email": "contact@ditesmoioui.com",
+    "location": "Marseille, France",
+    "copyright": "© 2026 Dites Moi Oui",
+    "privacy": "Privacy Policy",
+    "credit": "Design preview by Alta Frequenza"
+  },
+  "common": {
+    "brand": "Dites Moi <i>Oui</i>",
+    "brandName": "Dites Moi Oui",
+    "oui": "oui",
+    "seal": "DMO",
+    "close": "×",
+    "instagram": "Instagram",
+    "pinterest": "Pinterest",
+    "facebook": "Facebook",
+    "nextArrow": "→"
+  },
+  "languages": {
+    "fr": "FR",
+    "en": "EN",
+    "french": "French",
+    "english": "English",
+    "selection": "Language selection"
+  },
+  "extra": {
+    "estimateEyebrow": "A first glimpse of your celebration",
+    "venuesLink": "Explore Venue Sourcing",
+    "fallbackBody": "Tell Géraldine & Amandine about the celebration you are dreaming of.",
+    "fallbackLink": "Get Your Wedding Estimate",
+    "skip": "Skip",
+    "skipContent": "Skip to content",
+    "view": "View"
+  },
+  "preview": {
+    "body": "This page is not yet available in the preview. Please contact Géraldine & Amandine for more information.",
+    "journal": "<em>Journal</em>",
+    "client": "Client <em>Access</em>",
+    "privacy": "Privacy <em>Policy</em>"
+  },
+  "a11y": {
+    "intro": "Introduction",
+    "skipIntro": "Skip introduction",
+    "navLeft": "Main navigation, left",
+    "navRight": "Main navigation, right",
+    "home": "Dites Moi Oui, home",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "navigation": "Navigation",
+    "mobileNav": "Mobile navigation",
+    "stats": "Dites Moi Oui in numbers",
+    "gallery": "Wedding gallery",
+    "destinationProgress": "Destination progress",
+    "destinationKeyboard": "Destinations. Use left and right arrow keys to explore.",
+    "destinationStatus": "Destination {current} of {total}: {name}",
+    "estimate": "Your wedding estimate",
+    "estimateProgress": "Estimate quiz progress",
+    "testimonials": "Testimonials",
+    "testimonialSlider": "Wedding testimonials",
+    "testimonialControls": "Testimonial controls",
+    "slide": "{current} of {total}",
+    "showSlide": "Show testimonial {current} of {total}",
+    "slideStatus": "Testimonial {current} of {total}",
+    "pauseTestimonials": "Pause automatic testimonials",
+    "resumeTestimonials": "Resume automatic testimonials",
+    "footerNav": "Footer navigation",
+    "closePreview": "Close preview",
+    "enquire": "Make an enquiry",
+    "photo": "Wedding photograph",
+    "closePhoto": "Close photograph",
+    "viewPhoto": "View photograph: {description}",
+    "playVideo": "Play hero video",
+    "pauseVideo": "Pause hero video",
+    "press": "Press logos, not in use",
+    "languageChanged": "Language changed to English",
+    "carousel": "carousel",
+    "slideRole": "slide"
+  },
+  "quiz": {
+    "progressTitle": "Your celebration, imagined",
+    "step": "Step {current} of {total}",
+    "complete": "Estimate complete",
+    "yourEstimate": "Your estimate",
+    "back": "Back",
+    "restart": "Start again",
+    "continue": "Continue",
+    "previewSubmit": "See my estimate",
+    "submit": "Send my enquiry",
+    "steps": {
+      "destination": {
+        "title": "Where are you <em>dreaming</em> of?",
+        "hint": "Choose the setting for your story."
+      },
+      "season": {
+        "title": "When shall we <em>celebrate</em>?",
+        "hint": "A favourite season, or a little room to dream."
+      },
+      "guests": {
+        "title": "How many of your <em>favourite people</em>?",
+        "hint": "An approximate guest count is perfect for now."
+      },
+      "style": {
+        "title": "What is your <em>celebration</em> style?",
+        "hint": "Choose the experience that feels most like you."
+      },
+      "investment": {
+        "title": "Your <em>investment</em> in the occasion?",
+        "hint": "These ranges are placeholders while we prepare our guide."
+      },
+      "contact": {
+        "title": "Every story begins with <em>you.</em>",
+        "hint": "Share a few details. Fields marked * are required."
+      }
+    },
+    "destinations": {
+      "provence": {
+        "label": "Provence",
+        "note": "Under the Provençal sun",
+        "result": "Provence"
+      },
+      "riviera": {
+        "label": "Côte d'Azur",
+        "note": "Along the Mediterranean",
+        "result": "the Côte d'Azur"
+      },
+      "corsica": {
+        "label": "Corsica",
+        "note": "An island love story",
+        "result": "Corsica"
+      },
+      "marrakech": {
+        "label": "Marrakech",
+        "note": "Gardens, light & warm evenings",
+        "result": "Marrakech"
+      },
+      "apulia": {
+        "label": "Apulia",
+        "note": "Among the olive groves",
+        "result": "Apulia"
+      },
+      "unsure": {
+        "label": "Not sure yet",
+        "note": "Let’s dream together",
+        "result": "a destination yet to be chosen"
+      }
+    },
+    "seasons": {
+      "spring": "Spring",
+      "summer": "Summer",
+      "autumn": "Autumn",
+      "flexible": "Flexible"
+    },
+    "guests": {
+      "under50": "Under 50",
+      "50_100": "50–100",
+      "100_150": "100–150",
+      "150_plus": "150+"
+    },
+    "styles": {
+      "intimate": {
+        "label": "Intimate & elegant",
+        "note": "A beautifully personal gathering"
+      },
+      "weekend": {
+        "label": "Multi-day destination weekend",
+        "note": "More time to make memories"
+      },
+      "grand": {
+        "label": "Grand luxury celebration",
+        "note": "An extraordinary occasion"
+      }
+    },
+    "investment": {
+      "range_1": "[PLACEHOLDER range 1]",
+      "range_2": "[PLACEHOLDER range 2]",
+      "range_3": "[PLACEHOLDER range 3]",
+      "guidance": "I’d appreciate your guidance"
+    },
+    "fields": {
+      "year": "Year (optional)",
+      "firstName": "Your first name *",
+      "partnerName": "Partner’s first name *",
+      "email": "Email *",
+      "country": "Country *",
+      "weddingDate": "Wedding date (optional)",
+      "message": "A little about your plans (optional)"
+    },
+    "result": {
+      "title": "Your celebration in {destination}",
+      "label": "Your illustrative estimate",
+      "details": "{guests} guests · {style} · {season}{year}",
+      "reply": "Géraldine & Amandine will personally reply within 48 hours",
+      "titles": {
+        "provence": "Your celebration in Provence",
+        "riviera": "Your celebration in the Côte d'Azur",
+        "corsica": "Your celebration in Corsica",
+        "marrakech": "Your celebration in Marrakech",
+        "apulia": "Your celebration in Apulia",
+        "unsure": "Your celebration in a destination yet to be chosen"
+      }
+    },
+    "disclaimer": "Illustrative placeholder pricing, not a quote.",
+    "previewNote": "Preview only — no enquiry is sent. The 48-hour reply applies once a live enquiry is sent.",
+    "validation": {
+      "choice": "Please choose an option to continue.",
+      "year": "Please enter a whole year between {min} and {max}, or leave it empty.",
+      "email": "Please enter a valid email address.",
+      "date": "Please enter a valid wedding date, or leave it empty.",
+      "required": "Please complete the required fields.",
+      "unavailable": "The estimate is unavailable just now. Please email contact@ditesmoioui.com.",
+      "timeout": "The request timed out. Your answers are still here; please try again.",
+      "delivery": "Your enquiry could not be sent. Your answers are still here; please try again or email contact@ditesmoioui.com."
+    },
+    "status": {
+      "preparing": "Preparing your illustrative estimate…",
+      "sending": "Sending your enquiry…",
+      "previewReady": "Your preview estimate is ready.",
+      "sent": "Your enquiry has been sent. Thank you."
+    },
+    "counter": "{current} / {total}"
+  },
+  "images": {
+    "hero": "A couple celebrating their wedding, from the Dites Moi Oui film",
+    "geraldine": "Géraldine, founder of Dites Moi Oui",
+    "amandine": "Amandine, wedding planner at Dites Moi Oui",
+    "planning-1": "An outdoor wedding reception with a long table, flowers and wooden chairs",
+    "gallery-7": "Candles, place settings and glassware prepared for a celebration",
+    "gallery-8": "A guest holding a pink cocktail",
+    "production-1": "Guests celebrating beneath a canopy of lights at an evening wedding reception",
+    "gallery-9": "Candlelit place settings with delicate floral details",
+    "gallery-10": "Blush roses and glassware on a wedding reception table",
+    "gallery-1": "A bride arriving with her wedding party beneath tall trees",
+    "gallery-2": "Guests gathered around a garden wedding ceremony",
+    "gallery-3": "A wedding party on a stone staircase beside cypress trees",
+    "gallery-4": "A newly married couple sharing a kiss in a garden",
+    "gallery-5": "A reception table set with flowers, glassware and pale linens",
+    "gallery-6": "Floral arrangements and glassware on an outdoor reception table",
+    "destination-provence": "Lavender fields beneath a mountain at sunset",
+    "destination-french-riviera": "A sunlit coastal bay with colourful buildings and pink flowers",
+    "destination-corsica": "An aerial view of a Corsican harbour and coastline",
+    "destination-beyond": "A wedding terrace with striped parasols overlooking the sea",
+    "estimate-1": "Wedding ceremony chairs beside white flowers and greenery",
+    "estimate-2": "An overhead view of an intimate ceremony surrounded by trees",
+    "press-1": "Publication logo slot 1 (not in use)",
+    "press-2": "Publication logo slot 2 (not in use)",
+    "press-3": "Publication logo slot 3 (not in use)",
+    "press-4": "Publication logo slot 4 (not in use)",
+    "portfolio-1": "A wedding ceremony overlooking the sea",
+    "portfolio-2": "A joyful evening wedding reception beneath strings of lights",
+    "portfolio-3": "An elegant outdoor reception in a château courtyard"
+  },
+  "mobile": {
+    "galleryProgress": "Gallery progress",
+    "galleryItem": "Show photograph {current} of {total}",
+    "portfolioProgress": "Portfolio progress",
+    "portfolioItem": "Show wedding {current} of {total}",
+    "quickContact": "Quick contact",
+    "whatsapp": "WhatsApp",
+    "whatsappSoon": "WhatsApp is coming soon. Please use Enquire for now.",
+    "quizTitle": "Your wedding estimate",
+    "dragClose": "Drag down or tap to close the estimate",
+    "closeQuiz": "Close the estimate",
+    "loadingQuiz": "Preparing your celebration…",
+    "quizUnavailable": "We couldn’t open the estimate. Géraldine & Amandine are here to help by email.",
+    "emailInstead": "Enquire by email",
+    "testimonialRail": "Swipe through testimonials"
+  }
+}

@@ -1,0 +1,136 @@
+{
+  "planning-1": {
+    "source": "pictures ditesmoi/SnapInsta.to_863173120_18639062623038532_2380773394117054458_n.jpg",
+    "width": 1012,
+    "height": 1350
+  },
+  "production-1": {
+    "source": "pictures ditesmoi/SnapInsta.to_474040284_18483146713038532_7896225473897628154_n.jpg",
+    "width": 1050,
+    "height": 1050
+  },
+  "gallery-1": {
+    "source": "pictures ditesmoi/SnapInsta.to_656788260_18573310261038532_2649716999335489524_n.jpg",
+    "width": 850,
+    "height": 1133
+  },
+  "gallery-2": {
+    "source": "pictures ditesmoi/SnapInsta.to_365234792_18380622829038532_6547470801412620532_n.jpg",
+    "width": 850,
+    "height": 564
+  },
+  "gallery-3": {
+    "source": "pictures ditesmoi/SnapInsta.to_655060933_18573310240038532_3292003900122178751_n.jpg",
+    "width": 850,
+    "height": 1133
+  },
+  "gallery-4": {
+    "source": "pictures ditesmoi/SnapInsta.to_619837759_18078023450205123_1660830745783465874_n.jpg",
+    "width": 850,
+    "height": 850
+  },
+  "gallery-5": {
+    "source": "pictures ditesmoi/SnapInsta.to_569644237_18535776754038532_7967456168923982705_n.jpg",
+    "width": 850,
+    "height": 1133
+  },
+  "gallery-6": {
+    "source": "pictures ditesmoi/SnapInsta.to_364063459_18380622883038532_6860077889737062555_n.jpg",
+    "width": 850,
+    "height": 566
+  },
+  "gallery-7": {
+    "source": "pictures ditesmoi/SnapInsta.to_861650369_18639062620038532_2172429572711165581_n.jpg",
+    "width": 405,
+    "height": 540
+  },
+  "gallery-8": {
+    "source": "pictures ditesmoi/SnapInsta.to_821598058_18629051338038532_3147909254663937677_n.jpg",
+    "width": 405,
+    "height": 540
+  },
+  "gallery-9": {
+    "source": "pictures ditesmoi/SnapInsta.to_569764454_18535776775038532_3794364146259165781_n.jpg",
+    "width": 405,
+    "height": 540
+  },
+  "gallery-10": {
+    "source": "pictures ditesmoi/SnapInsta.to_473815461_18483338122038532_9166969641694068683_n.jpg",
+    "width": 420,
+    "height": 525
+  },
+  "destination-france": {
+    "source": "pictures ditesmoi/SnapInsta.to_660942548_18002406434728657_5873769872370810685_n.jpg",
+    "width": 1050,
+    "height": 1027
+  },
+  "estimate-1": {
+    "source": "pictures ditesmoi/SnapInsta.to_624992062_18555968146038532_5479841387875375168_n.jpg",
+    "width": 850,
+    "height": 1133
+  },
+  "estimate-2": {
+    "source": "pictures ditesmoi/SnapInsta.to_819236788_18629051329038532_6607947294801839378_n.jpg",
+    "width": 850,
+    "height": 1133
+  },
+  "portfolio-1": {
+    "source": "pictures ditesmoi/SnapInsta.to_473344421_18481997365038532_7560980826146943250_n.jpg",
+    "width": 850,
+    "height": 566
+  },
+  "portfolio-2": {
+    "source": "pictures ditesmoi/SnapInsta.to_474105228_18483146779038532_5775061487700070328_n.jpg",
+    "width": 850,
+    "height": 568
+  },
+  "portfolio-3": {
+    "source": "pictures ditesmoi/SnapInsta.to_474050323_18483338200038532_9000115305264995597_n.jpg",
+    "width": 850,
+    "height": 1063
+  },
+  "geraldine": {
+    "source": "Portrait linked from pictures ditesmoi/geraldine.html",
+    "width": 1000,
+    "height": 962,
+    "portraitURL": "https://ditesmoioui.com/wp-content/uploads/2024/01/Photo-Thomas-Audiffren-@thomasaudiffren-7-scaled-e1705597075154-1024x985.jpg"
+  },
+  "amandine": {
+    "source": "Portrait linked from pictures ditesmoi/amandine.html",
+    "width": 1000,
+    "height": 1009,
+    "portraitURL": "https://ditesmoioui.com/wp-content/uploads/2024/01/Photo-Thomas-Audiffren-@thomasaudiffren-4-scaled-e1705597088419-1015x1024.jpg"
+  },
+  "hero": {
+    "source": "pictures ditesmoi/hero ditesmoi.mp4",
+    "frameSeconds": 0.1,
+    "width": 900,
+    "height": 1098
+  },
+  "destination-provence": {
+    "source": "pictures ditesmoi/SnapInsta.to_702094359_18582625972056489_8554675289412293747_n.jpg",
+    "width": 1050,
+    "height": 1400
+  },
+  "destination-french-riviera": {
+    "source": "pictures ditesmoi/SnapInsta.to_510454313_18470069215077705_5474273630627698811_n.jpg",
+    "width": 1050,
+    "height": 1400
+  },
+  "destination-corsica": {
+    "source": "pictures ditesmoi/ollandini-corsica-giru.jpg",
+    "width": 1000,
+    "height": 799
+  },
+  "destination-beyond": {
+    "source": "pictures ditesmoi/SnapInsta.to_641408349_18568003858038532_8774923641560488772_n.jpg",
+    "width": 1050,
+    "height": 1400
+  },
+  "hero-wide": {
+    "source": "pictures ditesmoi/hero ditesmoi.mp4",
+    "frameSeconds": 0.1,
+    "width": 1600,
+    "height": 626
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "desktop": {
+    "introMs": 1803,
+    "sessionOnly": true,
+    "lenis": true,
+    "horizontalPanels": [
+      {
+        "index": "0",
+        "progress": "01",
+        "overflow": false,
+        "tone": [
+          "1",
+          "0",
+          "0",
+          "0"
+        ],
+        "x": 0
+      },
+      {
+        "index": "1",
+        "progress": "02",
+        "overflow": false,
+        "tone": [
+          "1",
+          "1",
+          "0",
+          "0"
+        ],
+        "x": -1179.9988
+      },
+      {
+        "index": "2",
+        "progress": "03",
+        "overflow": false,
+        "tone": [
+          "1",
+          "1",
+          "1",
+          "0"
+        ],
+        "x": -2360.0012
+      },
+      {
+        "index": "3",
+        "progress": "04",
+        "overflow": false,
+        "tone": [
+          "1",
+          "1",
+          "1",
+          "1"
+        ],
+        "x": -3540
+      }
+    ],
+    "keyboardNavigation": true,
+    "countUp": true,
+    "customCursor": true,
+    "lightbox": true,
+    "magneticPull": {
+      "x": 5.8781,
+      "y": -1.2035
+    },
+    "enquireVisibility": true,
+    "preferenceToggleCleanup": {
+      "lenis": false,
+      "pin": false,
+      "lines": 0,
+      "wipes": 0,
+      "horizontal": false,
+      "cursor": false
+    },
+    "accessibilityViolations": 0
+  },
+  "skip": {
+    "endedMs": 36.30000001192093,
+    "visible": false
+  },
+  "mobile": {
+    "nativeScroll": true,
+    "verticalDestinations": true,
+    "noCustomCursor": true,
+    "noOverflow": true,
+    "accessibilityViolations": 0
+  },
+  "blockedSessionStorage": "gracefully skipped intro",
+  "libraryFailure": "content and native scrolling remain usable"
+}

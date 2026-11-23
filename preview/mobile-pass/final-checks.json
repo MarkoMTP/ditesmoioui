@@ -1,0 +1,143 @@
+[
+  {
+    "name": "iphone14",
+    "lang": "en",
+    "fonts": [
+      {
+        "family": "Bodoni Moda",
+        "weight": "400",
+        "style": "normal",
+        "status": "loaded"
+      },
+      {
+        "family": "Bodoni Moda",
+        "weight": "400",
+        "style": "italic",
+        "status": "loaded"
+      },
+      {
+        "family": "Manrope",
+        "weight": "300 400",
+        "style": "normal",
+        "status": "loaded"
+      },
+      {
+        "family": "Mrs Saint Delafield",
+        "weight": "400",
+        "style": "normal",
+        "status": "loaded"
+      }
+    ],
+    "noOverflow": true
+  },
+  {
+    "name": "iphone14",
+    "lang": "fr",
+    "fonts": [
+      {
+        "family": "Bodoni Moda",
+        "weight": "400",
+        "style": "normal",
+        "status": "loaded"
+      },
+      {
+        "family": "Bodoni Moda",
+        "weight": "400",
+        "style": "italic",
+        "status": "loaded"
+      },
+      {
+        "family": "Manrope",
+        "weight": "300 400",
+        "style": "normal",
+        "status": "loaded"
+      },
+      {
+        "family": "Mrs Saint Delafield",
+        "weight": "400",
+        "style": "normal",
+        "status": "loaded"
+      }
+    ],
+    "noOverflow": true
+  },
+  {
+    "name": "iphone14",
+    "stickyRefreshAndLanguage": true,
+    "allQuizButtons48px": true,
+    "errors": []
+  },
+  {
+    "name": "pixel7",
+    "lang": "en",
+    "fonts": [
+      {
+        "family": "Bodoni Moda",
+        "weight": "400",
+        "style": "normal",
+        "status": "loaded"
+      },
+      {
+        "family": "Bodoni Moda",
+        "weight": "400",
+        "style": "italic",
+        "status": "loaded"
+      },
+      {
+        "family": "Manrope",
+        "weight": "300 400",
+        "style": "normal",
+        "status": "loaded"
+      },
+      {
+        "family": "Mrs Saint Delafield",
+        "weight": "400",
+        "style": "normal",
+        "status": "loaded"
+      }
+    ],
+    "noOverflow": true
+  },
+  {
+    "name": "pixel7",
+    "lang": "fr",
+    "fonts": [
+      {
+        "family": "Bodoni Moda",
+        "weight": "400",
+        "style": "normal",
+        "status": "loaded"
+      },
+      {
+        "family": "Bodoni Moda",
+        "weight": "400",
+        "style": "italic",
+        "status": "loaded"
+      },
+      {
+        "family": "Manrope",
+        "weight": "300 400",
+        "style": "normal",
+        "status": "loaded"
+      },
+      {
+        "family": "Mrs Saint Delafield",
+        "weight": "400",
+        "style": "normal",
+        "status": "loaded"
+      }
+    ],
+    "noOverflow": true
+  },
+  {
+    "name": "pixel7",
+    "stickyRefreshAndLanguage": true,
+    "allQuizButtons48px": true,
+    "errors": []
+  },
+  {
+    "smallPhone": "320×568",
+    "staticCardFallback": true,
+    "noOverflow": true
+  }
+]

@@ -1,0 +1,16 @@
+{
+  "en": {
+    "performance": 85,
+    "accessibility": 100,
+    "cls": 0.0020776658750984575,
+    "lcp": "4.3 s",
+    "tbt": "70 ms"
+  },
+  "fr": {
+    "performance": 85,
+    "accessibility": 100,
+    "cls": 0.0325696827169662,
+    "lcp": "4.2 s",
+    "tbt": "50 ms"
+  }
+}

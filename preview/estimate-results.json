@@ -1,0 +1,86 @@
+{
+  "calculations": [
+    "provence",
+    "riviera",
+    "corsica",
+    "marrakech",
+    "apulia",
+    "unsure"
+  ],
+  "widths": [
+    {
+      "width": 390,
+      "stableHeight": 473,
+      "keyboard": true,
+      "validation": true,
+      "back": true,
+      "noOverflow": true,
+      "axeViolations": 0,
+      "demoEvent": 1
+    },
+    {
+      "width": 768,
+      "stableHeight": 444,
+      "keyboard": true,
+      "validation": true,
+      "back": true,
+      "noOverflow": true,
+      "axeViolations": 0,
+      "demoEvent": 1
+    },
+    {
+      "width": 1024,
+      "stableHeight": 452,
+      "keyboard": true,
+      "validation": true,
+      "back": true,
+      "noOverflow": true,
+      "axeViolations": 0,
+      "demoEvent": 1
+    },
+    {
+      "width": 1440,
+      "stableHeight": 468,
+      "keyboard": true,
+      "validation": true,
+      "back": true,
+      "noOverflow": true,
+      "axeViolations": 0,
+      "demoEvent": 1
+    }
+  ],
+  "delivery": [
+    {
+      "mode": "success",
+      "attempts": 1,
+      "expectedResult": true
+    },
+    {
+      "mode": "error",
+      "attempts": 2,
+      "expectedResult": true
+    },
+    {
+      "mode": "timeout",
+      "attempts": 2,
+      "expectedResult": true
+    }
+  ],
+  "motion": [
+    {
+      "mode": "normal",
+      "completed": true,
+      "axeViolations": 0
+    },
+    {
+      "mode": "preference-switch",
+      "completed": true,
+      "axeViolations": 0
+    },
+    {
+      "mode": "no-library",
+      "completed": true,
+      "axeViolations": 0
+    }
+  ]
+}

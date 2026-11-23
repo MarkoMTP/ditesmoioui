@@ -1,0 +1,2 @@
+GSAP: original copyright and Standard License notices are retained in each distributed file. See https://gsap.com/standard-license/.
+Lenis: MIT license, reproduced in LENIS-LICENSE.txt.

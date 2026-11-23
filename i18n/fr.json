@@ -1,0 +1,433 @@
+{
+  "meta": {
+    "title": "Dites Moi Oui | Wedding planner de luxe en Provence et dans le Sud de la France",
+    "description": "Deux sœurs organisent des mariages et évènements d'exception en Provence, dans le Sud de la France, en Corse, à Marrakech et dans les Pouilles depuis 2005."
+  },
+  "nav": {
+    "home": "Accueil",
+    "services": "Nos services",
+    "destinations": "Destinations",
+    "sisters": "Les sœurs",
+    "portfolio": "Portfolio",
+    "journal": "Journal",
+    "contact": "Contact",
+    "client": "Espace client"
+  },
+  "hero": {
+    "h1": "Wedding planner de luxe en Provence et dans le Sud de la France",
+    "sub": "Deux sœurs, une passion partagée depuis 2005, et une promesse simple : un mariage qui vous ressemble <em>entièrement</em>.",
+    "intro": "D'un dîner aux chandelles dans une bastide provençale à une fête pieds nus en Corse, d'une soirée à Marrakech à un week-end dans les Pouilles, nous imaginons et produisons des célébrations avec goût, précision et cœur.",
+    "primary": "Commencer votre histoire",
+    "secondary": "Découvrir nos services"
+  },
+  "sisters": {
+    "eyebrow": "Les sœurs",
+    "h2": "Géraldine & <em>Amandine</em>",
+    "body1": "Géraldine a fondé Dites Moi Oui en 2005, rejointe par sa sœur Amandine, devenue son associée, en 2012. Depuis nos bureaux à Marseille, nous organisons mariages et évènements privés en Provence, sur la Côte d'Azur et bien au-delà, toujours ensemble et toujours personnellement.",
+    "body2": "Nous n'acceptons qu'un nombre limité d'évènements chaque année, pour que chaque couple bénéficie de toute notre attention. Au fil des mois de préparation, nous devenons bien plus que vos wedding planners : vos confidentes, du premier appel jusqu'à la dernière danse.",
+    "signature": "Géraldine & Amandine",
+    "link": "Notre histoire",
+    "captions": "Géraldine — Fondatrice · Amandine — Associée"
+  },
+  "stats": {
+    "items": [
+      {
+        "value": "2005",
+        "label": "Fondée à Marseille"
+      },
+      {
+        "value": "2",
+        "label": "Sœurs, une seule équipe"
+      },
+      {
+        "value": "4",
+        "label": "Destinations signature"
+      }
+    ]
+  },
+  "services": {
+    "eyebrow": "De A à Z",
+    "h2": "Organisation & <em>design</em> de mariage",
+    "body": "Recherche du lieu, décoration, prestataires, logistique des invités, déroulé : nous prenons en charge chaque étape, pour que vous profitiez des mois qui précèdent votre mariage autant que du jour J.",
+    "link": "Voir nos services",
+    "list": [
+      "Organisation complète : de la première idée au départ du dernier invité.",
+      "Destination Wedding : France, Corse, Maroc et Italie, avec une connaissance locale et un réseau de confiance.",
+      "Recherche de lieux : le lieu idéal pour votre histoire, parmi notre réseau de lieux d'exception.",
+      "Autres célébrations : anniversaires, fêtes privées, avec le même soin qu'un mariage."
+    ]
+  },
+  "production": {
+    "eyebrow": "Le jour J",
+    "h2": "Une production <em>sans faille</em>",
+    "body": "Sous la direction de Géraldine, notre équipe transforme des mois d'idées en une journée fluide : installation, prestataires, timing et tous ces petits détails que vos invités ne remarqueront jamais, parce que tout se passe parfaitement.",
+    "link": "Notre méthode"
+  },
+  "gallery": {
+    "h3": "Every celebration begins with a story.",
+    "h2": "Chaque évènement débute avec une <em>histoire</em>."
+  },
+  "destinations": {
+    "h2": "Là où l'on dit <em>oui</em>",
+    "intro": "Bastides provençales, villas face à la mer et lieux confidentiels en Corse : chaque lieu est choisi pour le couple, jamais l’inverse.",
+    "link": "Découvrir",
+    "items": [
+      {
+        "title": "Provence",
+        "body": "Champs de lavande, bastides en pierre et grandes tablées sous les platanes.",
+        "discover": "Découvrir : Provence"
+      },
+      {
+        "title": "Côte d’Azur",
+        "body": "Des célébrations le long de la côte méditerranéenne.",
+        "discover": "Découvrir la Côte d’Azur"
+      },
+      {
+        "title": "Corse",
+        "body": "Côte sauvage, criques turquoise et soirées pieds nus face à la mer.",
+        "discover": "Découvrir : Corse"
+      },
+      {
+        "title": "Et au-delà",
+        "body": "Italie, Marrakech…",
+        "discover": "Découvrir d’autres destinations"
+      }
+    ]
+  },
+  "estimate": {
+    "h2": "À quoi pourrait ressembler votre <em>mariage</em> ?",
+    "body": "Répondez à cinq questions rapides et recevez une première estimation de votre célébration, étudiée personnellement par Géraldine & Amandine.",
+    "button": "Commencer"
+  },
+  "testimonials": {
+    "h2": "Vos <em>mots</em>",
+    "intro": "Des couples venus de New York, Londres, Hong Kong, Sydney, Lagos et d'ailleurs nous ont fait confiance.",
+    "link": "Lire tous les témoignages",
+    "items": [
+      {
+        "quote": "« Un grand merci aux deux sœurs pour un mariage magistralement organisé ! »",
+        "name": "Victoria & Antoine — Paris / Australie"
+      },
+      {
+        "quote": "« Merci les filles, c'était un week-end fantastique pour nos invités et pour nous aussi ! »",
+        "name": "Michelle & Chris — New York"
+      },
+      {
+        "quote": "« Vous avez fait un travail hors pair et tous nos invités en sont encore émerveillés. »",
+        "name": "Nell & Chris — Sydney"
+      },
+      {
+        "quote": "« Nous avons apprécié votre écoute, votre bienveillance et votre professionnalisme. »",
+        "name": "Brad & Manuel — San Francisco"
+      },
+      {
+        "quote": "« Vous êtes vraiment les meilleures. »",
+        "name": "Ginika & Tolu — Lagos"
+      }
+    ]
+  },
+  "portfolio": {
+    "h2": "NOS PLUS BEAUX MARIAGES",
+    "button": "Découvrir le portfolio",
+    "items": [
+      {
+        "title": "Un mariage d'été au Château d'Estoublon",
+        "couple": "Marina & Mark — Washington, États-Unis"
+      },
+      {
+        "title": "Amour et danse au Domaine de la Coquillade",
+        "couple": "Joanne & Sylvain — Paris"
+      },
+      {
+        "title": "Un mariage festif à La Cadière-d'Azur",
+        "couple": "Jessica & Michael — New York"
+      }
+    ]
+  },
+  "closing": {
+    "h2": "Racontez-nous votre histoire. Nous nous occupons du <em>oui</em>.",
+    "button": "Réserver un premier échange"
+  },
+  "sticky": {
+    "label": "Nous écrire"
+  },
+  "footer": {
+    "tagline": "Mariages et évènements d'exception en Provence, dans le Sud de la France et au-delà.",
+    "links": {
+      "home": "Accueil",
+      "sisters": "Les sœurs",
+      "destinations": "Destinations",
+      "services": "Nos services",
+      "journal": "Journal",
+      "portfolio": "Portfolio",
+      "contact": "Contact"
+    },
+    "button": "Nous contacter",
+    "phone": "+33 (0)4 91 06 64 46",
+    "email": "contact@ditesmoioui.com",
+    "location": "Marseille, France",
+    "copyright": "© 2026 Dites Moi Oui",
+    "privacy": "Politique de confidentialité",
+    "credit": "Maquette par Alta Frequenza"
+  },
+  "common": {
+    "brand": "Dites Moi <i>Oui</i>",
+    "brandName": "Dites Moi Oui",
+    "oui": "oui",
+    "seal": "DMO",
+    "close": "×",
+    "instagram": "Instagram",
+    "pinterest": "Pinterest",
+    "facebook": "Facebook",
+    "nextArrow": "→"
+  },
+  "languages": {
+    "fr": "FR",
+    "en": "EN",
+    "french": "Français",
+    "english": "Anglais",
+    "selection": "Choix de la langue"
+  },
+  "extra": {
+    "estimateEyebrow": "Un premier aperçu de votre célébration",
+    "venuesLink": "Découvrir nos lieux d’exception",
+    "fallbackBody": "Racontez à Géraldine & Amandine la célébration dont vous rêvez.",
+    "fallbackLink": "Recevoir une estimation",
+    "skip": "Passer",
+    "skipContent": "Aller au contenu",
+    "view": "Voir"
+  },
+  "preview": {
+    "body": "Cette page n’est pas encore disponible dans la maquette. Contactez Géraldine & Amandine pour en savoir plus.",
+    "journal": "<em>Journal</em>",
+    "client": "Espace <em>client</em>",
+    "privacy": "Politique de <em>confidentialité</em>"
+  },
+  "a11y": {
+    "intro": "Introduction",
+    "skipIntro": "Passer l’introduction",
+    "navLeft": "Navigation principale, à gauche",
+    "navRight": "Navigation principale, à droite",
+    "home": "Dites Moi Oui, accueil",
+    "openMenu": "Ouvrir le menu",
+    "closeMenu": "Fermer le menu",
+    "navigation": "Navigation",
+    "mobileNav": "Navigation mobile",
+    "stats": "Dites Moi Oui en chiffres",
+    "gallery": "Galerie de mariages",
+    "destinationProgress": "Progression des destinations",
+    "destinationKeyboard": "Destinations. Utilisez les flèches gauche et droite pour les découvrir.",
+    "destinationStatus": "Destination {current} sur {total} : {name}",
+    "estimate": "Votre estimation de mariage",
+    "estimateProgress": "Progression de l’estimation",
+    "testimonials": "Témoignages",
+    "testimonialSlider": "Témoignages de mariés",
+    "testimonialControls": "Commandes des témoignages",
+    "slide": "{current} sur {total}",
+    "showSlide": "Afficher le témoignage {current} sur {total}",
+    "slideStatus": "Témoignage {current} sur {total}",
+    "pauseTestimonials": "Mettre les témoignages en pause",
+    "resumeTestimonials": "Reprendre les témoignages",
+    "footerNav": "Navigation de pied de page",
+    "closePreview": "Fermer la fenêtre",
+    "enquire": "Nous écrire",
+    "photo": "Photographie de mariage",
+    "closePhoto": "Fermer la photographie",
+    "viewPhoto": "Voir la photographie : {description}",
+    "playVideo": "Lancer la vidéo d’accueil",
+    "pauseVideo": "Mettre la vidéo d’accueil en pause",
+    "press": "Logos de presse, non utilisés",
+    "languageChanged": "La langue est maintenant le français",
+    "carousel": "carrousel",
+    "slideRole": "diapositive"
+  },
+  "quiz": {
+    "progressTitle": "Votre célébration prend forme",
+    "step": "Étape {current} sur {total}",
+    "complete": "Estimation terminée",
+    "yourEstimate": "Votre estimation",
+    "back": "Retour",
+    "restart": "Recommencer",
+    "continue": "Continuer",
+    "previewSubmit": "Voir mon estimation",
+    "submit": "Envoyer ma demande",
+    "steps": {
+      "destination": {
+        "title": "Où <em>rêvez-vous</em> de vous dire oui ?",
+        "hint": "Choisissez le décor de votre histoire."
+      },
+      "season": {
+        "title": "Quand souhaitez-vous <em>célébrer</em> ?",
+        "hint": "Une saison préférée, ou la liberté de choisir ensemble."
+      },
+      "guests": {
+        "title": "Combien de <em>proches</em> à vos côtés ?",
+        "hint": "Une première idée du nombre d’invités suffit."
+      },
+      "style": {
+        "title": "Quelle <em>célébration</em> vous ressemble ?",
+        "hint": "Choisissez l’expérience qui vous correspond le mieux."
+      },
+      "investment": {
+        "title": "Quel <em>budget</em> imaginez-vous ?",
+        "hint": "Ces fourchettes restent à définir dans notre guide."
+      },
+      "contact": {
+        "title": "Votre histoire commence avec <em>vous.</em>",
+        "hint": "Confiez-nous quelques détails. Les champs marqués * sont obligatoires."
+      }
+    },
+    "destinations": {
+      "provence": {
+        "label": "Provence",
+        "note": "Sous le soleil provençal",
+        "result": "Provence"
+      },
+      "riviera": {
+        "label": "Côte d'Azur",
+        "note": "Au bord de la Méditerranée",
+        "result": "Côte d'Azur"
+      },
+      "corsica": {
+        "label": "Corse",
+        "note": "Une histoire d’amour insulaire",
+        "result": "Corse"
+      },
+      "marrakech": {
+        "label": "Marrakech",
+        "note": "Jardins et douces soirées",
+        "result": "Marrakech"
+      },
+      "apulia": {
+        "label": "Pouilles",
+        "note": "Au cœur des oliveraies",
+        "result": "Pouilles"
+      },
+      "unsure": {
+        "label": "Pas encore décidé",
+        "note": "Rêvons ensemble",
+        "result": "un lieu encore à imaginer"
+      }
+    },
+    "seasons": {
+      "spring": "Printemps",
+      "summer": "Été",
+      "autumn": "Automne",
+      "flexible": "Dates flexibles"
+    },
+    "guests": {
+      "under50": "Moins de 50",
+      "50_100": "50–100",
+      "100_150": "100–150",
+      "150_plus": "150+"
+    },
+    "styles": {
+      "intimate": {
+        "label": "Intime et élégant",
+        "note": "Un moment qui n’appartient qu’à vous"
+      },
+      "weekend": {
+        "label": "Un week-end de célébrations",
+        "note": "Plus de temps pour créer des souvenirs"
+      },
+      "grand": {
+        "label": "Une grande célébration de luxe",
+        "note": "Une occasion extraordinaire"
+      }
+    },
+    "investment": {
+      "range_1": "[FOURCHETTE 1 À DÉFINIR]",
+      "range_2": "[FOURCHETTE 2 À DÉFINIR]",
+      "range_3": "[FOURCHETTE 3 À DÉFINIR]",
+      "guidance": "J’aimerais être conseillé(e)"
+    },
+    "fields": {
+      "year": "Année (facultatif)",
+      "firstName": "Votre prénom *",
+      "partnerName": "Prénom de votre partenaire *",
+      "email": "Adresse e-mail *",
+      "country": "Pays *",
+      "weddingDate": "Date du mariage (facultatif)",
+      "message": "Quelques mots sur votre projet (facultatif)"
+    },
+    "result": {
+      "title": "Votre célébration en {destination}",
+      "label": "Votre première estimation indicative",
+      "details": "{guests} invités · {style} · {season}{year}",
+      "reply": "Géraldine & Amandine vous répondront personnellement sous 48 heures",
+      "titles": {
+        "provence": "Votre célébration en Provence",
+        "riviera": "Votre célébration sur la Côte d'Azur",
+        "corsica": "Votre célébration en Corse",
+        "marrakech": "Votre célébration à Marrakech",
+        "apulia": "Votre célébration dans les Pouilles",
+        "unsure": "Votre célébration dans un lieu encore à imaginer"
+      }
+    },
+    "disclaimer": "Tarifs provisoires donnés à titre indicatif, sans valeur de devis.",
+    "previewNote": "Maquette uniquement — aucune demande n’est envoyée. Le délai de 48 heures s’applique à une demande réellement envoyée.",
+    "validation": {
+      "choice": "Choisissez une option pour continuer.",
+      "year": "Indiquez une année entière entre {min} et {max}, ou laissez ce champ vide.",
+      "email": "Indiquez une adresse e-mail valide.",
+      "date": "Indiquez une date de mariage valide, ou laissez ce champ vide.",
+      "required": "Complétez les champs obligatoires.",
+      "unavailable": "L’estimation n’est pas disponible pour le moment. Écrivez-nous à contact@ditesmoioui.com.",
+      "timeout": "Le délai de connexion est dépassé. Vos réponses sont conservées ; veuillez réessayer.",
+      "delivery": "Votre demande n’a pas pu être envoyée. Vos réponses sont conservées ; réessayez ou écrivez à contact@ditesmoioui.com."
+    },
+    "status": {
+      "preparing": "Nous préparons votre estimation indicative…",
+      "sending": "Votre demande est en cours d’envoi…",
+      "previewReady": "Votre estimation de démonstration est prête.",
+      "sent": "Votre demande a bien été envoyée. Merci."
+    },
+    "counter": "{current} / {total}"
+  },
+  "images": {
+    "hero": "Un couple célèbre son mariage, extrait du film Dites Moi Oui",
+    "geraldine": "Géraldine, fondatrice de Dites Moi Oui",
+    "amandine": "Amandine, wedding planner chez Dites Moi Oui",
+    "planning-1": "Une réception de mariage en plein air, avec une longue table fleurie et des chaises en bois",
+    "gallery-7": "Bougies, couverts et verrerie préparés pour une célébration",
+    "gallery-8": "Une invitée tient un cocktail rose",
+    "production-1": "Des invités font la fête sous un ciel de lumières lors d’une réception de mariage",
+    "gallery-9": "Une table aux chandelles, avec de délicats détails floraux",
+    "gallery-10": "Des roses pâles et de la verrerie sur une table de mariage",
+    "gallery-1": "Une mariée arrive avec ses proches sous de grands arbres",
+    "gallery-2": "Des invités réunis autour d’une cérémonie de mariage dans un jardin",
+    "gallery-3": "Un cortège de mariage sur un escalier en pierre bordé de cyprès",
+    "gallery-4": "De jeunes mariés s’embrassent dans un jardin",
+    "gallery-5": "Une table de réception dressée avec des fleurs, de la verrerie et du linge clair",
+    "gallery-6": "Compositions florales et verrerie sur une table de réception en plein air",
+    "destination-provence": "Des champs de lavande au pied d’une montagne au coucher du soleil",
+    "destination-french-riviera": "Une baie ensoleillée bordée de maisons colorées et de fleurs roses",
+    "destination-corsica": "Vue aérienne d’un port et du littoral corse",
+    "destination-beyond": "Une terrasse de mariage avec des parasols rayés face à la mer",
+    "estimate-1": "Des chaises de cérémonie près de fleurs blanches et de verdure",
+    "estimate-2": "Vue plongeante sur une cérémonie intime entourée d’arbres",
+    "press-1": "Emplacement de logo de presse 1 (non utilisé)",
+    "press-2": "Emplacement de logo de presse 2 (non utilisé)",
+    "press-3": "Emplacement de logo de presse 3 (non utilisé)",
+    "press-4": "Emplacement de logo de presse 4 (non utilisé)",
+    "portfolio-1": "Une cérémonie de mariage face à la mer",
+    "portfolio-2": "Une joyeuse réception de mariage sous des guirlandes lumineuses",
+    "portfolio-3": "Une élégante réception en plein air dans la cour d’un château"
+  },
+  "mobile": {
+    "galleryProgress": "Progression de la galerie",
+    "galleryItem": "Afficher la photographie {current} sur {total}",
+    "portfolioProgress": "Progression du portfolio",
+    "portfolioItem": "Afficher le mariage {current} sur {total}",
+    "quickContact": "Contact rapide",
+    "whatsapp": "WhatsApp",
+    "whatsappSoon": "WhatsApp arrive bientôt. Utilisez « Nous écrire » pour le moment.",
+    "quizTitle": "Votre estimation de mariage",
+    "dragClose": "Glisser vers le bas ou toucher pour fermer l’estimation",
+    "closeQuiz": "Fermer l’estimation",
+    "loadingQuiz": "Votre célébration prend forme…",
+    "quizUnavailable": "L’estimation n’a pas pu s’ouvrir. Géraldine & Amandine sont à votre écoute par e-mail.",
+    "emailInstead": "Nous écrire par e-mail",
+    "testimonialRail": "Faites défiler les témoignages"
+  }
+}

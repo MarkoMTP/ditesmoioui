@@ -1,0 +1,163 @@
+{
+  "devices": [
+    {
+      "name": "iphone14",
+      "engine": "WebKit",
+      "lang": "en",
+      "viewport": {
+        "width": 390,
+        "height": 664
+      },
+      "introMs": 958,
+      "stickyStack": {
+        "scale": 0.94,
+        "shade": 0.12
+      },
+      "rails": true,
+      "trustedTouchSwipe": false,
+      "bottomBar": true,
+      "dragClose": true,
+      "keyboardGeometry": {
+        "bottom": 344.3125,
+        "viewport": 364,
+        "font": "16px",
+        "heroStable": true
+      },
+      "quizStateAndTranslation": true,
+      "accessibilityViolations": 0,
+      "errors": []
+    },
+    {
+      "name": "iphone14",
+      "engine": "WebKit",
+      "lang": "fr",
+      "viewport": {
+        "width": 390,
+        "height": 664
+      },
+      "introMs": 1000,
+      "stickyStack": {
+        "scale": 0.94,
+        "shade": 0.12
+      },
+      "rails": true,
+      "trustedTouchSwipe": false,
+      "bottomBar": true,
+      "dragClose": true,
+      "keyboardGeometry": {
+        "bottom": 344.25,
+        "viewport": 364,
+        "font": "16px",
+        "heroStable": true
+      },
+      "quizStateAndTranslation": true,
+      "accessibilityViolations": 0,
+      "errors": []
+    },
+    {
+      "name": "pixel7",
+      "engine": "Chromium",
+      "lang": "en",
+      "viewport": {
+        "width": 412,
+        "height": 839
+      },
+      "introMs": 1028,
+      "stickyStack": {
+        "scale": 0.94,
+        "shade": 0.12
+      },
+      "rails": true,
+      "trustedTouchSwipe": true,
+      "bottomBar": true,
+      "dragClose": true,
+      "keyboardGeometry": {
+        "bottom": 519.3125,
+        "viewport": 539,
+        "font": "16px",
+        "heroStable": true
+      },
+      "quizStateAndTranslation": true,
+      "accessibilityViolations": 0,
+      "errors": []
+    },
+    {
+      "name": "pixel7",
+      "engine": "Chromium",
+      "lang": "fr",
+      "viewport": {
+        "width": 412,
+        "height": 839
+      },
+      "introMs": 1032,
+      "stickyStack": {
+        "scale": 0.94,
+        "shade": 0.12
+      },
+      "rails": true,
+      "trustedTouchSwipe": true,
+      "bottomBar": true,
+      "dragClose": true,
+      "keyboardGeometry": {
+        "bottom": 519.25,
+        "viewport": 539,
+        "font": "16px",
+        "heroStable": true
+      },
+      "quizStateAndTranslation": true,
+      "accessibilityViolations": 0,
+      "errors": []
+    }
+  ],
+  "reducedMotion": [
+    {
+      "name": "iphone14",
+      "staticCards": true,
+      "noIntro": true,
+      "noVideoAutoplay": true,
+      "instantSheet": true,
+      "accessibilityViolations": 0
+    },
+    {
+      "name": "pixel7",
+      "staticCards": true,
+      "noIntro": true,
+      "noVideoAutoplay": true,
+      "instantSheet": true,
+      "accessibilityViolations": 0
+    }
+  ],
+  "desktop": {
+    "unchangedLayout": true,
+    "lenisAndHorizontalPin": true,
+    "noMobileControllerRequest": true,
+    "breakpointCleanup": true
+  },
+  "profile": {
+    "cpuSlowdown": 4,
+    "sampleType": "rAF callback cadence; not a hardware GPU benchmark",
+    "sampleMs": 4000,
+    "frames": 239,
+    "medianFrameMs": 16.699999999999818,
+    "p95FrameMs": 16.800000000000182,
+    "maxFrameMs": 33.30000000000018,
+    "framesOver33ms": 0
+  },
+  "limitations": [
+    "Browser emulation does not reproduce physical phone GPUs, thermal throttling, Safari browser chrome or the real software keyboard. Keyboard geometry is simulated separately."
+  ],
+  "testimonialAutoAdvance": {
+    "intervalMs": 7000,
+    "advances": true,
+    "pausesDuringTouch": true,
+    "resumesAfterTouch": true
+  },
+  "introTapSkipMs": 44,
+  "startupProfile": {
+    "introMs": 939.3000000119209,
+    "allStartupMaxMs": 116.69999999999999,
+    "allStartupOver33": 1,
+    "visibleIntroMaxMs": 116.69999999999999,
+    "visibleIntroOver33": 1
+  }
+}

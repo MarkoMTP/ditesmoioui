@@ -1,0 +1,99 @@
+{
+  "widths": [
+    {
+      "width": 390,
+      "lang": "en",
+      "noOverflow": true,
+      "exactQuotes": 5,
+      "portfolioLinks": 3,
+      "translatedQuiz": true,
+      "answersPreserved": true,
+      "axeViolations": 0
+    },
+    {
+      "width": 390,
+      "lang": "fr",
+      "noOverflow": true,
+      "exactQuotes": 5,
+      "portfolioLinks": 3,
+      "translatedQuiz": true,
+      "answersPreserved": true,
+      "axeViolations": 0
+    },
+    {
+      "width": 768,
+      "lang": "en",
+      "noOverflow": true,
+      "exactQuotes": 5,
+      "portfolioLinks": 3,
+      "translatedQuiz": true,
+      "answersPreserved": true,
+      "axeViolations": 0
+    },
+    {
+      "width": 768,
+      "lang": "fr",
+      "noOverflow": true,
+      "exactQuotes": 5,
+      "portfolioLinks": 3,
+      "translatedQuiz": true,
+      "answersPreserved": true,
+      "axeViolations": 0
+    },
+    {
+      "width": 1024,
+      "lang": "en",
+      "noOverflow": true,
+      "exactQuotes": 5,
+      "portfolioLinks": 3,
+      "translatedQuiz": true,
+      "answersPreserved": true,
+      "axeViolations": 0
+    },
+    {
+      "width": 1024,
+      "lang": "fr",
+      "noOverflow": true,
+      "exactQuotes": 5,
+      "portfolioLinks": 3,
+      "translatedQuiz": true,
+      "answersPreserved": true,
+      "axeViolations": 0
+    },
+    {
+      "width": 1440,
+      "lang": "en",
+      "noOverflow": true,
+      "exactQuotes": 5,
+      "portfolioLinks": 3,
+      "translatedQuiz": true,
+      "answersPreserved": true,
+      "axeViolations": 0
+    },
+    {
+      "width": 1440,
+      "lang": "fr",
+      "noOverflow": true,
+      "exactQuotes": 5,
+      "portfolioLinks": 3,
+      "translatedQuiz": true,
+      "answersPreserved": true,
+      "axeViolations": 0
+    }
+  ],
+  "preferences": [
+    "Default EN, remembered choice, URL overrides storage in both directions",
+    "Blocked localStorage: direct French URL and toggle remain functional"
+  ],
+  "normalMotion": {
+    "headlineResplit": true,
+    "repeatedSwitches": true,
+    "smoothScroll": true,
+    "pinning": true,
+    "threeCountUps": true,
+    "scrollContextPreserved": true,
+    "axeViolations": 0
+  },
+  "imageSlots": "unchanged",
+  "translationKeys": 277
+}
